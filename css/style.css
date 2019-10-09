@@ -384,9 +384,14 @@ figure button img{
 }
 
 .featuredProducts{
+    z-index: -1;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* .main-carousel{
+    z-index: -1;
+} */
 
 .inputBox{
     font-family: "Raleway Light";
