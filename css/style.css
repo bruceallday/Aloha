@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'Raleway  Medium';
+    font-family: 'Raleway Medium';
     src: url('fonts/Raleway-Medium.eot');
     src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
         url('fonts/Raleway-Medium.woff2') format('woff2'),
@@ -185,6 +185,7 @@ header{
     background: #ffffff;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .mainLogo{
@@ -288,10 +289,6 @@ nav{
     font-family: "Playfair Display Medium";
 }
 
-figure button img{
-    margin-top: 5px;
-    width: 45%;
-}
 
 .mensImg{
     display: flex;
@@ -365,9 +362,9 @@ figure button img{
     grid-area: f;
 }
 
-.discriptiveText{
+.aboutText{
     font-family:  "Raleway  Italic";
-    padding: 50px 35px 50px 35px;
+    padding: 50px 50px 50px 45px;
 }
 
 .category{
@@ -383,15 +380,23 @@ figure button img{
     "f f";
 }
 
+/* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
+
+figure button img{
+    margin-top: 5px;
+    width: 45%;
+}
+
+/* figure button span{
+    display: none;
+} */
+
+/* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
+
 .featuredProducts{
     z-index: -1;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
-
-/* .main-carousel{
-    z-index: -1;
-} */
 
 .inputBox{
     font-family: "Raleway Light";
@@ -428,13 +433,17 @@ form{
 }
 
 footer{
-    height: 180px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     color: white;
     background-color: rgb(36, 36, 36);
     text-align: center; 
     font-size: 16px;
+}
+
+.contactInformation{
+    margin-top: 60px;
 }
 
 footer p{
@@ -467,7 +476,7 @@ section{
 }
 
 .socialHandle{
-    margin-top: 15px;
+    margin-top: 56px;
     display: flex;
     justify-content: center;
 }
@@ -528,7 +537,7 @@ i{
     }
 
     .discriptiveText{
-        padding: 50px 50px 50px 50px;
+        padding: 20px 50px 50px 20px;
     }
 
     footer{
@@ -537,6 +546,7 @@ i{
     }
 
     footer span{
+
         display: inline;
     }
 
@@ -612,14 +622,26 @@ i{
     }
 
 
-    .discriptiveText{
-        height: 180px;
-        padding: 50px 310px 10px 310px;
+    .aboutText{
+        height: 140px;
+        padding: 80px 350px 60px 350px;
     }
 
     .category div{
         height: 280px;
     }
+
+    /* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
+
+    /* figure button span{
+        width: 30%;
+        height: 30px;
+        font-family: "Raleway Medium";
+        color: white;
+        background-color: rgb(36, 36, 36);
+        margin-top: 10px;
+        border-radius: 60px;
+    } */
 
     footer{
         justify-content: space-between;
@@ -637,11 +659,28 @@ i{
        padding-left: 325px;
        padding-right: 325px;
        padding-top: 15px;
-   }
+    }
 
-   .inputBox{
+    .inputBox{
        width: 350px;
-   }
+    }
 
+    .socialHandle{
+       margin-bottom: 60px
+    }
+
+    .socialHandle li{
+       margin-top: 10px;
+    }
+
+    .contactInformation{
+       height: 245px
+    }
+
+    /* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
+
+    /* figure button img{
+        display: none;
+    } */
 
 }
