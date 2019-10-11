@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (){
     const submitButton = document.getElementsByClassName("submitButton");
-    const addToCartButton = document.getElementsByTagName("button");
+    const addToCartButton = document.getElementsByClassName("cartButton");
     const notiftext = document.getElementsByClassName("notif-text");
     const pageLinks = document.querySelectorAll(".navLink");
     const aboutLocation = document.getElementsByClassName("aboutLocation");
@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function (){
         }
     }
 
-    // ----------------------------------------------------------------------------------------------------------------------------------------
     const emailForm = document.getElementById("email-form");
 
     emailForm.addEventListener("submit", function () {
@@ -83,10 +82,6 @@ document.addEventListener("DOMContentLoaded", function (){
             return false;
         }
     }
-
-    // ----------------------------------------------------------------------------------------------------------------------------------------
-
-
 })
 
 
