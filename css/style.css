@@ -558,6 +558,7 @@ i{
     .socialHandle{
         flex-direction: column;
         text-align: left;
+        margin-top: 50px;
     }
 
     .category{
@@ -583,8 +584,8 @@ i{
         padding:0px 55px 0px 55px;
     }
 
-    footer i{
-        padding: 0px 0px 10px 0px;
+  footer i{
+        padding: 0px 0px 15px 0px;
     }
 
     .contactInformation{
@@ -675,6 +676,11 @@ i{
 
     .contactInformation{
        height: 245px
+    }
+
+    .cartButton{
+        background: none;
+        border: none;
     }
 
     /* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
