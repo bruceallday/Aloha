@@ -14,7 +14,6 @@
 <body>
     <header>
         <img class="mainLogo" src="images/aloha-logo.svg" alt="Aloha Apparel Logo"/>
-
         <div class="cartDiv">
             <img class="cart" src="images/cart-icon.svg" alt="Shopping Cart" />
             <div class="notif">
@@ -25,10 +24,10 @@
         <nav>
             <hr>
             <ul class="nav-items">
-                <li><a class="navLink" href="#about">ABOUT</a></li>
-                <li><a class="navLink" href="#shop">SHOP</a></li>
-                <li><a class="navLink" href="#featured">FEATURED</a></li>
-                <li><a class="navLink" href="#updates">UPDATES</a></li>
+                <li><a class="navLink" id="about">ABOUT</a></li>
+                <li><a class="navLink" id="shop">SHOP</a></li>
+                <li><a class="navLink" id="featured">FEATURED</a></li>
+                <li><a class="navLink" id="updates">UPDATES</a></li>
             </ul>
         </nav>
     </header>
@@ -42,14 +41,14 @@
     </section>
 
     <main>
-        <section class="aboutText" id="about">
-            <h2><span>Hand-Crafted</span><span class="boldText">  Styles</span></h2>
+        <section class="aboutText aboutLocation" id="#">
+            <h2><span>Hand-Crafted</span><span class="boldText">Styles</span></h2>
             <br>
             <p class="aboutAloha">Aloha Apparel Co. sells only the finest ready-to travel clothing. 
                                   Browse our current selection of products or sign-up for updates below</p>
         </section>
 
-        <section class="category" id="shop">
+        <section class="category shopLocation" id="#">
             
             <div class="mensImg">
                 <span>Mens</span>
@@ -77,7 +76,7 @@
 
         </section>
 
-        <section class="featuredProducts" id="featured">
+        <section class="featuredProducts featuredLocation" id="featured">
             <h2 class="#"> <span class="mostLoved">Most-Loved</span><span class="boldText"> Products</span></h2>
             <div class="main-carousel">
                 <figure class="carousel-cell"> 
@@ -87,6 +86,7 @@
                     <p>$169.99</p>
                     <button><img src="images/cart-icon.svg" alt="cart button"></button>
                 </figure>
+
                 <figure class="carousel-cell">
                     <img src="images/blue-silk-dress.jpg" alt="Denium Overall Shorts">
                     <p>Shorts</p>
@@ -94,6 +94,7 @@
                     <p>$89.00</p>
                     <button><img src="images/cart-icon.svg" alt="cart button"></button>
                 </figure>
+
                 <figure class="carousel-cell">
                     <img src="images/checked-stretch-dress.jpg" alt="Pink Dotted Dress">
                     <p>Dresses</p>
@@ -145,7 +146,7 @@
             </div>
         </section>
 
-        <section id="updates">
+        <section class="updatesLocation" id="#">
             <form action="#" method="#">
                 <div>
                     <h2 class="updatesText" > <span>Sign-up for</span> <span class="boldText">Updates!</span></h2>
