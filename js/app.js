@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function (){
-    const submitButton = document.getElementsByClassName("submitButton");
     const addToCartButton = document.getElementsByClassName("cartButton");
     const notiftext = document.getElementsByClassName("notif-text");
     const pageLinks = document.querySelectorAll(".navLink");
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
     pageLinks.forEach(element => {
         element.addEventListener("click", function(){
-            ScrollToPosition(element, updatesLocation, featuredLocation, shopLocation, aboutLocation);
+            ScrollToPosition(element);
         })     
     });
 
@@ -30,23 +29,25 @@ document.addEventListener("DOMContentLoaded", function (){
             UpdateCart();
         })
     }
+    
     function UpdateCart() {
         cartTotal += 1;
         notiftext[0].innerHTML = cartTotal;
     }
 
-    function ScrollToPosition(element, updatesLocation, featuredLocation, shopLocation, aboutLocation) {
+    function ScrollToPosition(element) {
+
         if (element.id === "updates") {
-            updatesLocation[0].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            updatesLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
         }
         else if (element.id === "featured") {
-            featuredLocation[0].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            featuredLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
         }
         else if (element.id === "shop") {
-            shopLocation[0].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            shopLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
         }
         else if (element.id === "about") {
-            aboutLocation[0].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            aboutLocation[0].scrollIntoView({ behavior: "smooth", block: "start"});
         }
     }
 
@@ -56,12 +57,10 @@ document.addEventListener("DOMContentLoaded", function (){
         const textBox = document.getElementById("input");
         const formData = textBox.value;
 
-        console.log(formData);
-
         if(IsEmailValid(formData)){
             alert("Thanks for subscribing!");
         }else{
-            alert("Please enter a valid email!")
+            alert("Please enter a valid email!");
         }
     })
 
