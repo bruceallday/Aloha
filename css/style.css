@@ -549,7 +549,7 @@ i{
     }
 
     .aboutText{
-        padding: 50px 50px 50px 50px;
+        padding: 50px 40px 50px 40px;
     }
 
     .discriptiveText{
@@ -575,6 +575,10 @@ i{
         flex-direction: column;
         text-align: left;
         margin-top: 50px;
+    }
+
+    .discriptiveText{
+        height: 200px;
     }
 
     .category{
@@ -699,6 +703,10 @@ i{
 
     .inputBox{
        width: 350px;
+    }
+
+    .discriptiveText{
+        height: 300px;
     }
 
     .socialHandle{
