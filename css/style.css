@@ -276,12 +276,13 @@ nav{
 }
 
 .banner p{
-    margin-top:30px;
+    margin-top:90px;
     font-size: 0.7em;
     text-shadow: 2px 2px 4px rgb(0, 0, 0.3);
 }
 
 .banner h3{
+
     padding: 0px 70px 50px 70px;
     font-size: 1.2em;
     color: white;
@@ -364,7 +365,7 @@ nav{
 
 .aboutText{
     font-family:  "Raleway  Italic";
-    padding: 50px 50px 50px 45px;
+    padding: 50px 35px 50px 35px;
 }
 
 .category{
@@ -396,6 +397,12 @@ figure button img{
 .featuredProducts{
     z-index: -1;
     margin-top: 30px;
+}
+
+.featuredProducts h2{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 1.2em;
 }
 
 .inputBox{
@@ -434,13 +441,16 @@ form{
 }
 
 footer{
-    height: 250px;
     display: flex;
     flex-direction: column;
     color: white;
     background-color: rgb(36, 36, 36);
     text-align: center; 
     font-size: 16px;
+}
+
+.discriptiveText{
+    height: 300px;
 }
 
 .contactInformation{
@@ -530,11 +540,16 @@ i{
     }
 
     .banner p{
+        margin-top: 0px;
         font-size: 1.1em;
     }
 
     .banner h3{
         font-size: 2em;
+    }
+
+    .aboutText{
+        padding: 50px 50px 50px 50px;
     }
 
     .discriptiveText{
@@ -544,6 +559,7 @@ i{
     footer{
         flex-direction: row;
         justify-content: space-between;
+        
     }
 
     footer span{
@@ -571,6 +587,10 @@ i{
         height: 150px;
     }
 
+     p.updateText{
+        padding: 0px 60px 0px 60px;
+    }
+
     form{
         padding-top: 10px;
         height: 320px;
@@ -592,6 +612,8 @@ i{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        margin-top: 80px;
+        margin-bottom: 40px;
     }
 
     h2 span{
@@ -622,6 +644,14 @@ i{
         background-repeat: no-repeat, no-repeat, repeat-x;
     }
 
+    .banner p{
+        margin-top: 120px
+    }
+
+    .banner h3{
+        font-size: 3em;
+        margin-top: 20px;
+    }
 
     .aboutText{
         height: 140px;
@@ -630,6 +660,10 @@ i{
 
     .category div{
         height: 280px;
+    }
+
+    .category span{
+        font-size: 2em;
     }
 
     /* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
@@ -646,8 +680,9 @@ i{
 
     footer{
         justify-content: space-between;
-        height: 350px;
+        
     }
+    
 
     form{
         padding-top: 10px;
@@ -667,7 +702,7 @@ i{
     }
 
     .socialHandle{
-       margin-bottom: 60px
+       margin-bottom: 50px
     }
 
     .socialHandle li{
@@ -675,12 +710,22 @@ i{
     }
 
     .contactInformation{
-       height: 245px
+       height: 245px;
+       margin-top: 40px;
     }
 
     .cartButton{
         background: none;
         border: none;
+    }
+
+    .featuredProducts h2{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+     p.updateText{
+        padding: 10px 0px 0px 0px;
     }
 
     /* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */

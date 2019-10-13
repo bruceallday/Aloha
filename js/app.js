@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function (){
     function ScrollToPosition(element) {
 
         if (element.id === "updates") {
-            updatesLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
+            updatesLocation[0].scrollIntoView({ behavior: "smooth", block: "start"});
         }
         else if (element.id === "featured") {
             featuredLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded", function (){
 
     const emailForm = document.getElementById("email-form");
 
-    emailForm.addEventListener("submit", function () {
+    emailForm.addEventListener("submit", function (event) {
+        event.preventDefault();
         const textBox = document.getElementById("input");
         const formData = textBox.value;
 
