@@ -202,6 +202,17 @@ header{
     left: 0px;
 }
 
+.cartAni{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    animation-name: rotate;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+
+}
+
 .cartDiv{
     width: 55px;
     height: 55px;
@@ -381,18 +392,10 @@ nav{
     "f f";
 }
 
-/* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
-
 figure button img{
     margin-top: 5px;
     width: 45%;
 }
-
-/* figure button span{
-    display: none;
-} */
-
-/* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
 
 .featuredProducts{
     z-index: -1;
@@ -670,18 +673,6 @@ i{
         font-size: 2em;
     }
 
-    /* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
-
-    /* figure button span{
-        width: 30%;
-        height: 30px;
-        font-family: "Raleway Medium";
-        color: white;
-        background-color: rgb(36, 36, 36);
-        margin-top: 10px;
-        border-radius: 60px;
-    } */
-
     footer{
         justify-content: space-between;
         
@@ -736,10 +727,16 @@ i{
         padding: 10px 0px 0px 0px;
     }
 
-    /* ----------------------    ----------------------    ----------------------    ----------------------    ---------------------- */
+}
 
-    /* figure button img{
-        display: none;
-    } */
-
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }25%{
+        transform: rotate(-40deg);
+    }75%{
+        transform: rotate(40deg);
+    }100%{
+        transform: rotate(0deg)
+    }
 }

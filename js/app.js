@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function (){
     const shopLocation = document.getElementsByClassName("shopLocation");
     const featuredLocation = document.getElementsByClassName("featuredLocation");
     const updatesLocation = document.getElementsByClassName("updatesLocation");
+    const emailForm = document.getElementById("email-form");
+
+    const cart = document.querySelector(".cart");
+
+    console.log(cart);
+
     let cartTotal = 0;
 
     // Flkty set-up
@@ -29,16 +35,22 @@ document.addEventListener("DOMContentLoaded", function (){
             UpdateCart();
         })
     }
-    
-    function UpdateCart() {
-        cartTotal += 1;
-        notiftext[0].innerHTML = cartTotal;
-    }
+
+    emailForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const textBox = document.getElementById("input");
+        const formData = textBox.value;
+
+        if (IsEmailValid(formData)) {
+            alert("Thanks for subscribing!");
+        } else {
+            alert("Please enter a valid email!");
+        }
+    })
 
     function ScrollToPosition(element) {
-
         if (element.id === "updates") {
-            updatesLocation[0].scrollIntoView({ behavior: "smooth", block: "start"});
+            updatesLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
         }
         else if (element.id === "featured") {
             featuredLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
@@ -47,23 +59,15 @@ document.addEventListener("DOMContentLoaded", function (){
             shopLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
         }
         else if (element.id === "about") {
-            aboutLocation[0].scrollIntoView({ behavior: "smooth", block: "start"});
+            aboutLocation[0].scrollIntoView({ behavior: "smooth", block: "start" });
         }
     }
-
-    const emailForm = document.getElementById("email-form");
-
-    emailForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-        const textBox = document.getElementById("input");
-        const formData = textBox.value;
-
-        if(IsEmailValid(formData)){
-            alert("Thanks for subscribing!");
-        }else{
-            alert("Please enter a valid email!");
-        }
-    })
+    
+    function UpdateCart() {
+        animateCart(cart);
+        cartTotal += 1;
+        notiftext[0].innerText = cartTotal;
+    }
 
     function HasSpecialCharacter(input) {
         const specialCharacters = ["@", ".com", ".ca", ".co.uk", "gmail", "yahoo"]
@@ -85,4 +89,10 @@ document.addEventListener("DOMContentLoaded", function (){
 })
 
 
+function animateCart(cart) {
+    cart.classList.add("cartAni");
+    setTimeout(function () {
+        cart.classList.remove("cartAni");
+    }, 400);
+}
 
