@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (){
-    const addToCartButton = document.getElementsByClassName("cartButton");
+    const addToCartButton = document.querySelectorAll(".cartButton");
     const notiftext = document.getElementsByClassName("notif-text");
     const pageLinks = document.querySelectorAll(".navLink");
     const aboutLocation = document.getElementsByClassName("aboutLocation");
@@ -7,11 +7,7 @@ document.addEventListener("DOMContentLoaded", function (){
     const featuredLocation = document.getElementsByClassName("featuredLocation");
     const updatesLocation = document.getElementsByClassName("updatesLocation");
     const emailForm = document.getElementById("email-form");
-
     const cart = document.querySelector(".cart");
-
-    console.log(cart);
-
     let cartTotal = 0;
 
     // Flkty set-up
@@ -30,11 +26,12 @@ document.addEventListener("DOMContentLoaded", function (){
         })     
     });
 
-    for (let i = 0; i < addToCartButton.length; i++) {
-        addToCartButton[i].addEventListener("click", function () {
+    addToCartButton.forEach(element => {
+        element.addEventListener("click", function(){
             UpdateCart();
+            AnimateCart(cart);
         })
-    }
+    });
 
     emailForm.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -46,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function (){
         } else {
             alert("Please enter a valid email!");
         }
-    })
+    });
 
     function ScrollToPosition(element) {
         if (element.id === "updates") {
@@ -64,14 +61,12 @@ document.addEventListener("DOMContentLoaded", function (){
     }
     
     function UpdateCart() {
-        animateCart(cart);
         cartTotal += 1;
         notiftext[0].innerText = cartTotal;
     }
 
     function HasSpecialCharacter(input) {
         const specialCharacters = ["@", ".com", ".ca", ".co.uk", "gmail", "yahoo"]
-
         for (let i = 0; i < specialCharacters.length; i++) {
             if (input.indexOf(specialCharacters[i]) > - 1) {
                 return true;
@@ -86,13 +81,15 @@ document.addEventListener("DOMContentLoaded", function (){
             return false;
         }
     }
+
+    function AnimateCart(cart) {
+        cart.classList.add("cartAni");
+        setTimeout(function () {
+            cart.classList.remove("cartAni");
+        }, 400);
+    }
 })
 
 
-function animateCart(cart) {
-    cart.classList.add("cartAni");
-    setTimeout(function () {
-        cart.classList.remove("cartAni");
-    }, 400);
-}
+
 

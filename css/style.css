@@ -94,46 +94,6 @@
     font-style: italic;
 }
 
-/* .ralewayLight{
-    font-family: "Raleway Light";
-}
-
-.ralewayItalic{
-    font-family: "Raleway LightItalic";
-}
-
-.ralewayLightItalic{
-    font-family: 'Raleway LightItalic';
-}
-
-.playfairDisplayReg{
-    font-family: "Playfair Display Regular";
-}
-
-.playfairDisplayItalic{
-    font-family: "Playfair Display Italic";
-}
-
-.playfairDisplayBold{
-    font-family: "Playfair Display Bold";
-}
-
-.playfairDisplayBoldItalic{
-    font-family: 'Playfair Display BoldItalic';
-}
-
-.greyFont{
-    color: #2d2d2d;
-}
-
-.redFont{
-    color: #e2574c;
-}
-
-.whiteFont{
-    color: white;
-} */
-
 p{
     font-size: 14px;
 }
@@ -200,6 +160,10 @@ header{
     width: 100%;
     height: 100%;
     left: 0px;
+}
+
+.cartButton{
+    outline: none;
 }
 
 .cartAni{
@@ -284,6 +248,7 @@ nav{
 
     background-repeat: no-repeat;
     background-size: 100%, 25%, 125%;
+    line-height: 30px;
 }
 
 .banner p{
@@ -294,7 +259,7 @@ nav{
 
 .banner h3{
 
-    padding: 0px 70px 50px 70px;
+    padding: 0px 70px 70px 70px;
     font-size: 1.2em;
     color: white;
     text-shadow: 2px 2px 4px rgb(0, 0, 0.3);
@@ -517,12 +482,13 @@ i{
         font-size: 16px;
     }
 
-    nav{
+  nav{
         margin-top: 50px;
+        margin-right: 45px
     }
 
     .nav-items li{
-        margin-left: 15px;
+        margin-left: 5px;
     }
 
     hr{
@@ -540,6 +506,7 @@ i{
     .banner{
         height: 420px;
         width: 100%;
+        line-height: 55px;
     }
 
     .banner p{
@@ -549,6 +516,7 @@ i{
 
     .banner h3{
         font-size: 2em;
+        padding-bottom: 50px;
     }
 
     .aboutText{
@@ -652,7 +620,7 @@ i{
     }
 
     .banner p{
-        margin-top: 120px
+        margin-top: 75px;
     }
 
     .banner h3{
@@ -678,7 +646,6 @@ i{
         
     }
     
-
     form{
         padding-top: 10px;
         height: 340px;
