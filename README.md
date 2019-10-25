@@ -2,7 +2,7 @@
 
 A Responsive, static front-end mobile-first, e-commerce website.
 
-![](AlohaGif.gif)
+![](AlohaGifReadMe.gif)
 
 ## Installing
 
