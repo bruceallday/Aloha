@@ -6,7 +6,7 @@ A Responsive, static front-end mobile-first, e-commerce website.
 
 ## Installing
 
-To run Aloha download the project then run on  loval server of your choice <br>
+To run Aloha download the project then run on  local server of your choice <br>
 
 Alternatively follow [this link]( https://bpouncey.github.io/Aloha/) for a live demo
 
@@ -17,6 +17,7 @@ Alternatively follow [this link]( https://bpouncey.github.io/Aloha/) for a live 
 * JavaScript
 * GIT
 * bash
+* [Flickity](https://flickity.metafizzy.co/)
 
 ### Personal Learnings
 
@@ -27,23 +28,23 @@ Example:
 From this:
 
 ```javascript
-  addToCartButton.forEach(element => {
-        element.addEventListener("click", function(){
-            UpdateCart();
-            AnimateCart(cart);
-        })
-    });
-```
-
-To this:
-
-```javascript
-   for (let i = 0; i < addToCartButton.length; i++) {
+  for (let i = 0; i < addToCartButton.length; i++) {
         addToCartButton[i].addEventListener("click", function(){
             UpdateCart();
             AnimateCart(cart);
         })
     }
+```
+
+To this:
+
+```javascript
+    addToCartButton.forEach(element => {
+        element.addEventListener("click", function(){
+            UpdateCart();
+            AnimateCart(cart);
+        })
+    });
 ```
 
 
