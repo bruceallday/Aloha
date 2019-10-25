@@ -21,7 +21,7 @@ Alternatively follow [this link]( https://bpouncey.github.io/Aloha/) for a live 
 
 ### Personal Learnings
 
-The main take-away from this project was updating my previous skills into a more semantic, modern approach
+The main take-away from this project was updating my previous skills into a more semantic, modern approach.
 
 Example:
 
@@ -30,8 +30,8 @@ From this:
 ```javascript
   for (let i = 0; i < addToCartButton.length; i++) {
         addToCartButton[i].addEventListener("click", function(){
-            UpdateCart();
-            AnimateCart(cart);
+            updateCart();
+            animateCart(cart);
         })
     }
 ```
@@ -41,8 +41,8 @@ To this:
 ```javascript
     addToCartButton.forEach(element => {
         element.addEventListener("click", function(){
-            UpdateCart();
-            AnimateCart(cart);
+            updateCart();
+            animateCart(cart);
         })
     });
 ```
