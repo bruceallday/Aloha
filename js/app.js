@@ -33,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function (){
         })
     });
 
- 
-
     emailForm.addEventListener("submit", function (event) {
         event.preventDefault();
         const textBox = document.getElementById("input");

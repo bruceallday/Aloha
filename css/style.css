@@ -96,6 +96,7 @@
 
 p{
     font-size: 14px;
+    user-select: none;
 }
 
 p, span{
@@ -121,6 +122,8 @@ p.updateText{
 h1, h2, h4, h5, h6{
     color: #2d2d2d;
     font-family: "Playfair Display Regular";
+    user-select: none;
+
 }
 
 h2 span{
@@ -164,6 +167,8 @@ header{
 
 .cartButton{
     outline: none;
+    background: none;
+    border: none;
 }
 
 .cartAni{
@@ -232,6 +237,7 @@ nav{
     color: white;
     background-color: #b64036;
     transition: background-color .5s;
+    cursor: pointer;
 }
 
 .banner{
@@ -255,10 +261,11 @@ nav{
     margin-top:90px;
     font-size: 0.7em;
     text-shadow: 2px 2px 4px rgb(0, 0, 0.3);
+    user-select: none;
 }
 
 .banner h3{
-
+    user-select: none;
     padding: 0px 70px 70px 70px;
     font-size: 1.2em;
     color: white;
@@ -277,6 +284,7 @@ nav{
     height: 170px;
     background-repeat: no-repeat;
     grid-area: a; 
+    user-select: none;
 }
 
 .trendsImg{
@@ -289,6 +297,8 @@ nav{
     height: 170px;
     background-repeat: no-repeat;
     grid-area: b;
+    user-select: none;
+
 }
 
 .glassesImg{
@@ -301,6 +311,7 @@ nav{
     height: 100%;
     background-repeat: no-repeat;
     grid-area: c;
+    user-select: none;
 }
 
 .saleImg{
@@ -313,6 +324,7 @@ nav{
     height: 170px;
     background-repeat: no-repeat;
     grid-area: d;
+    user-select: none;
 }
 
 .bagsImg{
@@ -325,6 +337,7 @@ nav{
     height: 100%;
     background-repeat: no-repeat;
     grid-area: e;
+    user-select: none;
 }
 
 .womansImg{
@@ -337,6 +350,7 @@ nav{
     height: 170px;
     background-repeat: no-repeat;
     grid-area: f;
+    user-select: none;
 }
 
 .aboutText{
