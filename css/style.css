@@ -273,85 +273,159 @@ nav{
     font-family: "Playfair Display Medium";
 }
 
-
-.mensImg{
+.imgContiner{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    background: url("../images/mens-category.jpg");
-    background-size: 115%;
+    align-items: center;
     width: 100%;
-    height: 170px;
-    background-repeat: no-repeat;
+    height: 100%;
     grid-area: a; 
     user-select: none;
+    overflow: hidden;
+}
+/* 
+-------------------------------------------------------------------- */
+
+.mens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url("../images/mens-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mens:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+.mensImg{
+    grid-area: a; 
+}
+
+/* 
+-------------------------------------------------------------------- */
+.trends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url("../images/trends-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trends:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .trendsImg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url("../images/trends-category.jpg");
-    background-size: 100%;
-    width: 100%;
-    height: 170px;
-    background-repeat: no-repeat;
     grid-area: b;
-    user-select: none;
+}
 
+/* 
+-------------------------------------------------------------------- */
+
+.glasses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url("../images/glasses-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.glasses:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .glassesImg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url("../images/glasses-category.jpg");
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
     grid-area: c;
-    user-select: none;
+}
+
+/* 
+-------------------------------------------------------------------- */
+
+.sale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+      background: url("../images/sale-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sale:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .saleImg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url("../images/sale-category.jpg");
-    background-size: 120%;
-    width: 100%;
-    height: 170px;
-    background-repeat: no-repeat;
     grid-area: d;
-    user-select: none;
+}
+
+/* 
+-------------------------------------------------------------------- */
+
+.bags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url("../images/bags-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bags:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .bagsImg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url("../images/bags-category.jpg");
-    background-size: 115%;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
     grid-area: e;
-    user-select: none;
+}
+
+/* 
+-------------------------------------------------------------------- */
+
+.womens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url("../images/womens-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.womens:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .womansImg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url("../images/womens-category.jpg");
-    background-size: 100%;
-    width: 100%;
-    height: 170px;
-    background-repeat: no-repeat;
     grid-area: f;
-    user-select: none;
 }
+
+/* 
+-------------------------------------------------------------------- */
 
 .aboutText{
     font-family:  "Raleway  Italic";
