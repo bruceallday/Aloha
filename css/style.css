@@ -165,10 +165,18 @@ header{
     left: 0px;
 }
 
+.cart:hover{
+    cursor: pointer;
+}
+
 .cartButton{
     outline: none;
     background: none;
     border: none;
+}
+
+.cartButton:hover{
+    cursor: pointer;
 }
 
 .cartAni{
